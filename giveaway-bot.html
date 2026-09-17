@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wr-giveaway-finder — Dennis Chen</title>
+<meta name="description" content="wr-giveaway-finder — a Discord bot that surfaces real YouTube giveaways daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="giveaway-bot">
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">DC</a>
+  <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-links">
+    <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+    <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+    <li><a href="giveaway-bot.html" class="nav-link" data-page="giveaway-bot">Giveaway Bot</a></li>
+    <li><a href="gallery.html" class="nav-link" data-page="gallery">Gallery</a></li>
+    <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+  </ul>
+</nav>
+
+<main>
+  <header class="page-header">
+    <p class="hero-kicker reveal">First personal project · has real users</p>
+    <h1 class="page-title reveal">wr-giveaway-finder</h1>
+    <p class="page-subtitle reveal">A Discord bot that finds real YouTube giveaways and shares the good ones — every day, automatically.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="https://spectre729.github.io/wr-giveaway-finder.github.io/" target="_blank" rel="noopener">Try it live</a>
+      <!--<a class="btn btn-ghost" href="https://github.com/spectre729" target="_blank" rel="noopener">GitHub</a> -->
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="stat-grid reveal">
+      <div class="stat-card">
+        <span class="stat-number">50</span>
+        <span class="stat-label">YouTube videos scraped per query</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">6–7</span>
+        <!-- six seven lol
+          
+        but i'm serious it is around 6 to 7 videos per day, more during new events
+        -->
+        <span class="stat-label">qualified giveaways surfaced daily</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">80–90%</span>
+        <span class="stat-label">of irrelevant results filtered out</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">100</span>
+        <span class="stat-label">Discord servers supported</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title reveal">The story</h2>
+    <div class="about-prose reveal">
+      <p>Most projects that I've worked on was for a class. This one wasn't. 
+        As a (mostly) free-to-play, or F2P, War Robots players, I wanted to help other F2P players in increasing their chance of obtaining the best equipments in war robots. Keeping track of giveaway videos across a few big YouTubers is tiring, and keeping track of every eligible YouTubers would be worse. Oddly enough, I keet missing good giveaways buried in a flood of low-effort YouTube videos, and I figured I could filter the noise better than scrolling ever would.</p>
+      <p>It's grown into the first thing I've built that real people actually use without me asking
+        them to: it's running across dozens of Discord servers, quietly doing its job every day. That
+        made it a different kind of project to work on — no spec, no deadline, just "does this
+        actually work for the people using it."</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title reveal">How it works</h2>
+    <div class="about-prose reveal">
+      <p>A scheduled job pulls candidate videos from YouTube for a set of tracked creators and search
+        terms. Each candidate goes through a two-stage filter — first a cheap keyword pass, then an
+        LLM classification step for anything ambiguous — before it's checked against a Postgres table
+        of giveaways already seen. What survives gets pushed out to subscribed Discord servers.</p>
+      <p>The whole thing runs on a small Google Compute Engine instance, with the pipeline built
+        around a simple principle: do the cheap filtering first, and only spend an LLM call on videos
+        that actually need judgment.</p>
+    </div>
+    <div class="tag-list reveal">
+      <span>Python</span><span>PostgreSQL</span><span>OpenAI API</span><span>YouTube Data API</span><span>Google Compute Engine</span><span>discord.py</span>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <h2 class="section-title reveal">Want to add it to your server?</h2>
+    <p class="contact-sub reveal">Try it out, or reach out if you run into issues or have ideas.</p>
+    <div class="contact-links reveal">
+      <a href="https://spectre729.github.io/wr-giveaway-finder.github.io/" target="_blank" rel="noopener" class="btn btn-primary">Try it live</a>
+      <a href="mailto:dc777@cornell.edu" class="btn btn-ghost">Email me</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Dennis Chen · <a href="mailto:dc777@cornell.edu">dc777@cornell.edu</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Dennis Chen</title>
+<meta name="description" content="About Dennis Chen — background, experience, and skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="about">
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">DC</a>
+  <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-links">
+    <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+    <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+    <li><a href="giveaway-bot.html" class="nav-link" data-page="giveaway-bot">Giveaway Bot</a></li>
+    <li><a href="gallery.html" class="nav-link" data-page="gallery">Gallery</a></li>
+    <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+  </ul>
+</nav>
+
+<main>
+  <header class="page-header">
+    <p class="hero-kicker reveal">About</p>
+    <h1 class="page-title reveal">The longer version</h1>
+  </header>
+
+  <section class="section">
+    <div class="about-prose reveal">
+      <p>Hello there! I'm a Computer Science student at Cornell University as a Master of Engineering candidate, where I will graduate in December 2026. I like systems that involves a lot of moving parts, such as queues, retries, async pipelines, but I'm also curious how about these systems talk with the frontend. Lately, I've been working on ways on I can add LLMs that significantly improves my workflow.</p>
+      <p>In addition to my coursework, I'm also juggling between two internships: I'm an <strong>AI Engineer Intern at Redtail Studios</strong>, where I work on the async infrastructure behind a market intelligence platform, and a <strong>Full-Stack Developer Intern at <a href="">Altheros Capital</a></strong>, where I bounce between Swift, backend APIs, and shipping web pages for the firm and its portfolio companies, including <a href="https://honeydew-rail-329463.hostingersite.com/" target="_blank" rel="noopener">Insane Vegan</a>,which I'm moving into a tech lead role. Although if I'm being totally honest, they're both Software Engineer roles with a fancy-ish titles.</p>
+      <p>Before that, I spent the 2025-2026 academic year as a <strong>Machine Learning Researcher at Gao Labs</strong>, working on adaptive sampling models for real-world uncertainty under the supervision of Yishuo Jiang and leading a small group of engineers turning research code into reproducible training pipelines. This semester, I've shifted gear and worked on world models. </p>
+      <p>Additionally, I've also been a <strong>teaching assistant at Cornell</strong> since fall 2023. I actually started off as an undergrad consultant, and got promoted to undergrad teaching assistant in spring 2026, and gradaute teaching assistant this semester.</p>
+      <p>Outside of work and school, I built and maintain
+        <a href="giveaway-bot.html">wr-giveaway-finder</a>, a Discord bot that finds War Robots giveaways on YouTube and shares them to various discord server(include Sattu and Universe Pro), that's grown actual users across dozens of servers. Funny enough, it's my first project that wasn't just for a grade or an employer, which made it a different kind of learning experience. </p>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <h2 class="section-title reveal">Experience</h2>
+    <ol class="timeline">
+      <li class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>AI Engineer Intern</h3>
+            <span class="timeline-date">July 2026 – Present</span>
+          </div>
+          <p class="timeline-org">Redtail Studios · Remote</p>
+          <ul>
+            <li>Designed an asynchronous AWS architecture using EventBridge and SQS to parallelize processing across 18 platforms and 2,000 records, eliminating up to 2.5 hours of manual scraping.</li>
+            <li>Built test suites comprising 288 unit tests &amp; 15 integration tests, simulating FastAPI calls and AWS services with Moto.</li>
+            <li>Resolved an SQS production failure consuming 85% of monthly AWS capacity with timeouts, retries, S3 recovery, and DLQs.</li>
+            <li>Expanded public access to a proprietary market intelligence system with FastAPI endpoints.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Full-Stack Developer Intern</h3>
+            <span class="timeline-date">June 2026 – Present</span>
+          </div>
+          <p class="timeline-org">Altheros Capital · Remote</p>
+          <ul>
+            <li>Built a Swift networking layer from scratch, centralizing API calls, automating authentication, and refresh-token handling.</li>
+            <li>Standardized REST API documentation across 33 endpoints with structured errors, versioning, and OpenAPI specifications.</li>
+            <li>Implemented 46 automated tests across Swift networking, backend schemas, and database migrations; built GitHub Actions CI/CD checks to detect API specification drift.</li>
+            <li>Led development and deployment of React landing pages for a portfolio company and a production webpage for the firm's main website.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Machine Learning Researcher</h3>
+            <span class="timeline-date">Aug. 2025 – May 2026</span>
+          </div>
+          <p class="timeline-org">Gao Labs · Ithaca, NY</p>
+          <ul>
+            <li>Reduced Integrated Squared Error (ISE) by 75% by designing a ConvLSTM-based adaptive sampler with a diffusion-inspired training loop to model real-world uncertainty in emission sampling.</li>
+            <li>Accelerated training throughput 5x on NVIDIA A100 clusters by re-engineering input/output dimensions and scaling batch size from 8 to 40.</li>
+            <li>Led 7 engineers through weekly sprints, turning experimental models into scalable training pipelines and reproducible deployment workflows.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Graduate Teaching Assistant</h3>
+            <span class="timeline-date">Aug. 2023 – Present</span>
+          </div>
+          <p class="timeline-org">Cornell University · Ithaca, NY</p>
+          <ul>
+            <li>Facilitated technical learning for an introductory computer science course with 180 students through weekly recitation sessions.</li>
+            <li>Promoted from undergraduate to graduate teaching assistant for top performance.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title reveal">Education</h2>
+    <div class="about-fact reveal">
+      <span class="fact-label">Cornell University</span>
+      <span class="fact-value">M.Eng. Computer Science — Expected Dec. 2026</span>
+      <span class="fact-value">B.S. Computer Science, GPA 3.2 — May 2026</span>
+      <span class="fact-value">Dean's List: Spring 2025, Fall 2025, Spring 2026</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title reveal">Skills</h2>
+    <div class="skills-grid reveal">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="tag-list">
+          <span>Python</span><span>C++</span><span>Java</span><span>OCaml</span><span>Swift</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend & APIs</h3>
+        <div class="tag-list">
+          <span>FastAPI</span><span>Django</span><span>REST APIs</span><span>PostgreSQL</span><span>Alembic</span><span>OpenAPI</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud & DevOps</h3>
+        <div class="tag-list">
+          <span>AWS (S3, SQS, Lambda, EventBridge)</span><span>Google Cloud</span><span>Docker</span><span>GitHub Actions</span><span>CI/CD</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>ML / AI</h3>
+        <div class="tag-list">
+          <span>PyTorch</span><span>Scikit-Learn</span><span>LLMs</span><span>RAG</span><span>MCP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title reveal">Personal Interest</h2>
+    <div class="interest-grid reveal">
+      <div class="interest-card">
+        <h3>Gaming</h3>
+        <p>Video games: War Robots, Mech Arena, BTD6, Minecraft, Red Alert 2</p>
+      </div>
+      <div class="interest-card">
+        <h3>YouTube</h3>
+        <p>Goofy Gang(CheapPickle, Tinymacdude, Wallibear, Al1, Creebus, and Estabrok), Torres Pit, Mark Wiens, Steven He, Uncle Roger, Clickbait Sports</p>
+      </div>
+      <div class="interest-card">
+        <h3>Sports</h3>
+        <p>Football(both kinds), baseball, basketball, hockey (Go Birds, Go Phillies, Go Sixers, and Go Flyers)! I guess WWE if you count it as Sports Entertainment.</p>
+      </div>
+      <div class="interest-card">
+        <h3>Music</h3>
+        <p>KPop, Mandopop, Cantopop, Rap, or whatever fits the mood</p>
+      </div>
+      <div class="interest-card">
+        <h3>Clubs</h3>
+        <p>Big Red Marching Band, Big Red Pep Band. Yes, I play the snare drum and occasionally the tenor drums.</p>
+      </div>
+      <div class="interest-card">
+        <h3>Hopes and Dreams</h3>
+        <p>Travel the country and world (in business class) and try out different cuisines, attend sporting events featuring Philadelphia sport teams, and go zip-lining.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <h2 class="section-title reveal">Get in touch</h2>
+    <div class="contact-links reveal">
+      <a href="mailto:dc777@cornell.edu" class="btn btn-primary">dc777@cornell.edu</a>
+      <a href="https://linkedin.com/in/dennischen-cs" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+      <a href="https://github.com/spectre729" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Dennis Chen · <a href="mailto:dc777@cornell.edu">dc777@cornell.edu</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
