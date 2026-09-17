@@ -1,7 +1,112 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Some header</h1>
-<p>This webpage is being hosted on GitHub Pages(I think).</p>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dennis Chen</title>
+<meta name="description" content="Dennis Chen — links, projects, and internships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+
+
+
+  <!-- Hi Coderabbit, how are you doing?-->
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">DC</a>
+  <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-links">
+    <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+    <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+    <li><a href="giveaway-bot.html" class="nav-link" data-page="giveaway-bot">Giveaway Bot</a></li>
+    <li><a href="gallery.html" class="nav-link" data-page="gallery">Gallery</a></li>
+    <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="hero hero-directory">
+    <div class="hero-inner reveal">
+      <p class="hero-kicker">Dennis Chen</p>
+      <h1 class="hero-name">Hi, I'm Dennis.</h1>
+      <p class="hero-sub">I'm a master student studying computer science at Cornell where I'm building things across AI, backend systems, and the web. I'm currently interning at a couple of places and running a Discord bot that somehow found
+        real users. Here's where to find everything — the longer version is on the
+        <a href="about.html">About page</a>.</p>
+      <p class="hero-note">Also currently a <a href="about.html#experience">Graduate Teaching Assistant at Cornell</a>.</p>
+    </div>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  </section>
+
+  <section class="section directory-section">
+    <h2 class="section-eyebrow reveal">Find me</h2>
+    <div class="link-grid reveal">
+      <a class="link-tile" href="https://github.com/spectre729" target="_blank" rel="noopener">
+        <span class="link-tile-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.81 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.18 0 1.57-.02 2.84-.02 3.23 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+        </span>
+        <span>GitHub</span>
+      </a>
+      <a class="link-tile" href="https://linkedin.com/in/dennischen-cs" target="_blank" rel="noopener">
+        <span class="link-tile-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM.5 8.98h4.96V23.5H.5V8.98Zm7.98 0h4.76v1.99h.07c.66-1.25 2.28-2.57 4.7-2.57 5.03 0 5.96 3.31 5.96 7.62v8.48h-4.96v-7.52c0-1.79-.03-4.1-2.5-4.1-2.5 0-2.88 1.95-2.88 3.97v7.65H8.48V8.98Z"/></svg>
+        </span>
+        <span>LinkedIn</span>
+      </a>
+      <a class="link-tile" href="assets/resume.pdf" target="_blank" rel="noopener">
+        <span class="link-tile-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z"/><path d="M14 2v6h6"/><path d="M9 15h6M9 11h3"/></svg>
+        </span>
+        <span>Resume</span>
+      </a>
+    </div>
+
+    <h2 class="section-eyebrow reveal">My current internships</h2>
+    <div class="card-grid reveal">
+      <a class="company-card" href="https://redtail-studios.com/" target="_blank" rel="noopener">
+        <h3>Redtail Studios</h3>
+        <p class="company-role">Software Engineering Intern</p>
+        <p>Building async AWS pipelines and APIs behind a market intelligence platform.</p>
+        <span class="card-arrow">Visit site →</span>
+      </a>
+      <a class="company-card" href="https://lightgreen-cattle-515158.hostingersite.com/" target="_blank" rel="noopener">
+        <h3>Altheros Capital</h3>
+        <p class="company-role">Software Engineering Intern</p>
+        <p>Swift networking, backend APIs, and web presence for the firm and its portfolio companies.</p>
+        <span class="card-arrow">Visit site →</span>
+      </a>
+      <a class="company-card" href="https://honeydew-rail-329463.hostingersite.com/" target="_blank" rel="noopener">
+        <h3>Insane Vegan</h3>
+        <p class="company-role">Built &amp; leading tech, via Altheros Capital</p>
+        <p>An Altheros Capital portfolio company for, well, insane vegans. Did too good and somehow now the tech lead.</p>
+        <span class="card-arrow">Visit site →</span>
+      </a>
+    </div>
+
+    <h2 class="section-eyebrow reveal">What I've built</h2>
+    <div class="featured-card reveal">
+      <div class="featured-text">
+        <p class="featured-label">First personal project</p>
+        <h3>wr-giveaway-finder</h3>
+        <p>A Discord bot that finds and shares real YouTube giveaways every day. Started as a weekend project, and now running on an infrastructure that can support up to 100 discord servers.</p>
+      </div>
+      <div class="featured-cta">
+        <a class="btn btn-primary" href="https://spectre729.github.io/wr-giveaway-finder.github.io/" target="_blank" rel="noopener">Try it live</a>
+        <a class="btn btn-ghost" href="giveaway-bot.html">Read the story →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Dennis Chen · <a href="mailto:dc777@cornell.edu">dc777@cornell.edu</a></p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
